@@ -11,9 +11,10 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-@import '/header/header.css';
+@import 'header/header.css';
 
 * {
+  box-sizing: border-box;
   font-family: 'Rubik', sans-serif;
 }
 

@@ -1,0 +1,20 @@
+header {
+    border: 2px green solid;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    nav {
+        align-self: flex-end;
+        ul {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+
+            li {
+                list-style: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,1 @@
+header{border:2px green solid;padding:10px;display:flex;justify-content:space-between;align-items:flex-start}header nav{align-self:flex-end}header nav ul{display:flex;align-items:baseline;gap:10px}header nav ul li{list-style:none}
