@@ -12,6 +12,7 @@ Frågor:
 
  + Vilka semantiska taggar kommer att vara relevanta i projektet?
  + Ok att använda id om man ska länka dit?
+ + Var det ok att använda visibility: hidden?
 
 Inspiration:
 

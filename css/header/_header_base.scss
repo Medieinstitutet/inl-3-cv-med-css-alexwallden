@@ -1,35 +1,53 @@
 header {
-    position: relative;
-    border: 2px green solid;
+    width: 100%;
+    // border: 2px blue solid;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    // transition: margin-top .3s ease-in-out;
+
+    h1 {
+        display: none;
+    }
 
     button {
-        position: absolute;
+        position: fixed;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         top: 0;
         right: 0;
-        width: 50px;
+        width: 70px;
         height: 35px;
         background-color: transparent;
         border: none;
+        z-index: 2;
+
         span {
             display: block;
             width: 100%;
-            height: 3px;
+            height: 4px;
             background-color: black;
             border-radius: 5px;
         }
     }
 
     nav {
-        align-self: flex-end;
+        position: fixed;
+        display: block;
+        visibility: hidden;
+        top: -100vh;
+        right: 0;
+        width: 100vw;
+        background-color: green;
+        text-align: center;
+        z-index: 1;
+        transition: top .3s ease-in-out;
+
         ul {
             display: flex;
+            flex-direction: column;
             align-items: baseline;
             gap: 10px;
 
