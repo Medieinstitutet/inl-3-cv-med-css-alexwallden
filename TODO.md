@@ -6,6 +6,7 @@ Todos:
  + [x] Kolla igenom tillgänglighet för förra koden 
  + [x] Lägg in wireframe i iPad
  + [ ] Kolla hur man använder aria-taggar och om det är relevant för projektet
+ + [ ] Lägg css-koden i en fil
 
 
 Frågor:
