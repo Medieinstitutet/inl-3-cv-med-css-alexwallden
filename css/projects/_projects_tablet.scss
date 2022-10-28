@@ -1,0 +1,5 @@
+#projects {
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(1, fit-content);
+    gap: 30px;
+}

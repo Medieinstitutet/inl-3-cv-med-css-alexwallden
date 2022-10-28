@@ -1,0 +1,12 @@
+#about-me {
+    background-color: green;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        .link-images {
+            display: flex;
+
+        }
+    }
+}

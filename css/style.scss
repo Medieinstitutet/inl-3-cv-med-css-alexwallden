@@ -11,7 +11,10 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-@import 'header/header.css';
+@import 'header/header.scss';
+@import 'main/_main_base';
+@import 'about-me/about-me.scss';
+@import 'projects/projects.scss';
 
 * {
   box-sizing: border-box;
@@ -30,9 +33,6 @@ html {
   line-height: 1.4;
 }
 
-body { 
-  padding: 50px;
-}
 
 /*
  * Remove text-shadow in selection highlight:

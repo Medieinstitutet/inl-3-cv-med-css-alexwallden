@@ -1,0 +1,5 @@
+@import '_projects_base.scss';
+
+@media screen and (min-width: 481px) {
+    @import '_projects_tablet.scss';
+}
