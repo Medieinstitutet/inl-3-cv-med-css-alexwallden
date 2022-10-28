@@ -1,5 +1,7 @@
+@import '../variables';
+
 main {
-    padding: 10px;
+    padding: $base-padding;
     border: 2px green solid;
-    background-color: aquamarine;
+    min-height: 100%;
 }
