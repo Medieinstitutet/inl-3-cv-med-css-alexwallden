@@ -34,7 +34,7 @@ body {
         height: $header-height;
         width: 100%;
         // border: 2px blue solid;
-        padding: 10px;
+        padding: 20px;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -234,6 +234,7 @@ body {
                     color: $dbg-text-color-highlight;
                     height: 35px;
                     width: 80px;
+                    padding: 3px;
                 }
             }
         }

@@ -5,10 +5,10 @@ Todos:
  + [x] Klistra in koden från förra projektet 
  + [x] Kolla igenom tillgänglighet för förra koden 
  + [x] Lägg in wireframe i iPad
- + [ ] Kolla hur man använder aria-taggar och om det är relevant för projektet
+ + [x] Kolla hur man använder aria-taggar och om det är relevant för projektet
  + [x] Lägg css-koden i en fil
  + [ ] Kolla upp och använd lazy loading
- + [ ] Rätta till utifrån kommentarer
+ + [x] Rätta till utifrån kommentarer
 
 
 Frågor:
