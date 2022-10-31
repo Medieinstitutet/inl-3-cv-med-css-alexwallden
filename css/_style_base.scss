@@ -1,7 +1,6 @@
 @import 'variables';
 
 body {
-    background-color: $a-color;
 
     // Menyknapp
     .menu-button {
@@ -22,16 +21,17 @@ body {
             display: block;
             width: 100%;
             height: 4px;
-            background-color: $text-color-highlight;
+            background-color: $dbg-text-color-highlight;
             border-radius: 5px;
         }
     }
 
     // Header
     header {
-        background-color: $background-color;
-        color: $text-color-highlight;
+        background-color: $dbg-background-color;
+        color: $dbg-text-color-highlight;
         position: relative;
+        height: $header-height;
         width: 100%;
         // border: 2px blue solid;
         padding: 10px;
@@ -40,12 +40,30 @@ body {
         align-items: flex-start;
         // transition: margin-top .3s ease-in-out;
 
-        h1 {
-            // border: 2px orange solid;
+        .logo {
+            position: relative;
+            height: $logo-circle-radius;
+            width: $logo-circle-radius;
+            font-size: calc($logo-circle-radius / 2);
+            border: 2px $dbg-text-color-highlight solid;
+            border-radius: 50%;
+
+            p {
+                position: relative;
+                left: .45em;
+                display: block;
+                font-size: 1em;
+                margin: 0;
+
+                &:last-child {
+                    bottom: .8em;
+                    left: .75em;
+                }
+            }
         }
 
         nav {
-            background-color: $background-color;
+            background-color: $dbg-background-color;
             position: fixed;
             display: block;
             visibility: hidden;
@@ -76,15 +94,56 @@ body {
     }
 
     main {
-        padding: $base-padding;
-        // border: 2px green solid;
+
+        & > * {
+            padding: $base-padding;
+        }
         min-height: 100%;
+        background-color: $dbg-background-color;
+
+        .start {
+            height: calc(100vh - $header-height);
+            width: 100%;
+            padding: $base-padding;
+            background-color: $lbg-background-color;
+            color: $lbg-text-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .name-presentation {
+                position: relative;
+                right: 5%;
+                
+                h2 {
+                    margin: 0;
+
+                    &:last-child {
+                        position: relative;
+                        left: 40px;
+                        font-size: 1.7rem;
+                        background-color: $dbg-background-color;
+                        color: $lbg-background-color;
+                        margin-top: 10px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
 
 
         .about-me {
-            background-color: $light-background-color;
+            background-color: $dbg-background-color;
+            color: $dbg-text-color;
             // min-height: 100vh;
             // border: 2px red solid;
+            p {
+                a {
+                    text-decoration: none;
+                    color: $dbg-text-color-highlight;
+                }
+            }
 
             section {
                 display: flex;
@@ -104,23 +163,38 @@ body {
                         a {
                             i {
                                 font-size: 2rem;
-                                color: blue;
+                                color: $dbg-text-color-highlight;
                             }
                         }
                     }
 
                 }
             }
+            figure {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    border-radius: 50%;
+                    box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 1);
+                }
+            }
         }
 
         .projects {
-            background-color: $e-color;
+            background-color: $lbg-background-color;
+            color: $lbg-text-color;
             display: grid;
             justify-content: center;
             grid-template-columns: .9fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: .1fr 1fr 1fr;
             gap: 20px;
             // border: 2px blue solid;
+
+            h2 {
+                color: $lbg-headline-color;
+            }
 
             section {
 
@@ -132,6 +206,8 @@ body {
         }
 
         .get-in-touch {
+            background-color: $dbg-background-color;
+            color: $dbg-text-color;
             form {
                 fieldset {
                     display: grid;
@@ -151,6 +227,13 @@ body {
                         margin-bottom: 10px;
                     }
 
+                }
+                button {
+                    background-color: transparent;
+                    border: 1px $dbg-text-color-highlight solid;
+                    color: $dbg-text-color-highlight;
+                    height: 35px;
+                    width: 80px;
                 }
             }
         }

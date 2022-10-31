@@ -36,15 +36,18 @@
 </head>
 
 <body>
-  <button class="menu-button" aria-label="open-nav-menu"> 
+  <button class="menu-button" aria-label="open-nav-menu">
     <span></span>
     <span></span>
     <span></span>
   </button>
   <header class="header">
-    <h1>Alexander Walldén</h1>
+    <div class="logo">
+      <p>A</p>
+      <p>W</p>
+    </div>
     <nav class="nav-menu">
-      <ul> 
+      <ul>
         <li><a href="#about-me">About me</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#get-in-touch">Get in touch</a></li>
@@ -55,33 +58,37 @@
 
   <main>
     <article class="start">
-      <h2 class="text-primary">Hi, my name is</h2>
-      <h2>Alexander Walldén</h2>
+      <div class="name-presentation">
+        <h2>Hi, my name is</h2>
+        <h2>Alexander Walldén</h2>
+      </div>
     </article>
 
     <article class="about-me" id="about-me">
+      <p><strong>Alexander Walldén</strong> is a former music teacher who's studying front end development at <a href="https://medieinstitutet.se/">Medieinstitutet</a>.</p>
+      <figure>
+        <img src="img/Alexander-Wallden.jpeg" alt="Alexander Walldén" height="200" lazy>
+        <figcaption>Alexander Walldén</figcaption>
+      </figure>
       <section>
-        <p><strong>Alexander Walldén</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, at.</p>
         <ul class="link-images">
           <li><a href="https://github.com/alexwallden" target="blank"><i class="bi bi-github"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/alexander-walld%C3%A9n-44127a52/" target="blank"><i class="bi bi-linkedin"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/alexander-walld%C3%A9n-44127a52/" target="blank"><i
+                class="bi bi-linkedin"></i></a></li>
           <li><a href="https://twitter.com/alexwallden" target="blank"><i class="bi bi-twitter"></i></a></li>
         </ul>
       </section>
-        <figure>
-          <img src="img/Alexander-Wallden.jpeg" alt="Alexander Walldén" height="200">
-          <figcaption>Alexander Walldén</figcaption>
-        </figure>
     </article>
 
     <article class="projects" id="projects">
+      <h2>Projects</h2>
       <section>
-        <h3>Project name</h3>
+        <h3>To the moon</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatem accusantium totam fuga
           nisi atque minus magni, accusamus rerum veritatis!</p>
       </section>
       <section>
-        <h3>Project name</h3>
+        <h3>Home dashboard</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatem accusantium totam fuga
           nisi atque minus magni, accusamus rerum veritatis!</p>
       </section>
@@ -101,18 +108,17 @@
           <textarea name="message" id="message" placeholder="Your message"></textarea>
         </fieldset>
         <button type="submit" value="Submit">Submit</button>
-        <button type="reset">Reset</button>
       </form>
     </article>
   </main>
 
-    <footer>
-      <address>
-        <a href="mailto:alexander.wallden@me.com">alexander.wallden@me.com</a>
-        <p>0736-32 17 62</p>
-      </address>
-      <a href="#">Source code</a>
-    </footer>
+  <footer>
+    <address>
+      <a href="mailto:alexander.wallden@me.com">alexander.wallden@me.com</a>
+      <p>0736-32 17 62</p>
+    </address>
+    <a href="#">Credits</a>
+  </footer>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

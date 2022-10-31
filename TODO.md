@@ -20,8 +20,9 @@ Frågor:
 Inspiration:
 
  + https://robbowen.digital/
- + https://www.jason.af/
- + https://olaolu.dev/
+ + https://www.jason.af/ - credit
+ + https://olaolu.dev/ - credit
+ + https://brittanychiang.com/ - credit
  + https://anniebombanie.com/
  + https://catalins.tech/14-best-web-developer-portfolios-to-get-inspiration
 
