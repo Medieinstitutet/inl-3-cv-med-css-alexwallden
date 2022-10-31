@@ -8,9 +8,13 @@ menuButton.addEventListener('click', () => {
     // navMenu.style = showMenu ? openAttr : closedAttr;
     navMenu.style.visibility = showMenu ? 'visible' : 'hidden';
     navMenu.style.top = showMenu ? '0' : '-155px';
-    window.pageYOffset < 87 && (header.style.transition = 'margin-top .3s ease-in-out')
+    showMenu ? header.style.transition = 'margin-top .3s ease-in-out' : header.style.transition = 'none';
 
-    header.style.marginTop = showMenu ? '155px' : '0';
+     window.pageYOffset < 26 && (header.style.marginTop = showMenu ? '155px' : '0');
 
     // window.pageYOffset === 0 && window.scrollTo(0, 100);
 })
+
+// window.addEventListener('scroll', () => {
+//     console.log(window.pageYOffset)
+// })

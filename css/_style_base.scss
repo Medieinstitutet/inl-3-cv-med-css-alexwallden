@@ -1,0 +1,172 @@
+@import 'variables';
+
+body {
+    background-color: $a-color;
+
+    // Menyknapp
+    .menu-button {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 10px;
+        right: 10px;
+        width: 70px;
+        height: 35px;
+        background-color: transparent;
+        border: none;
+        z-index: 2;
+        cursor: pointer;
+
+        span {
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: $text-color-highlight;
+            border-radius: 5px;
+        }
+    }
+
+    // Header
+    header {
+        background-color: $background-color;
+        color: $text-color-highlight;
+        position: relative;
+        width: 100%;
+        // border: 2px blue solid;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        // transition: margin-top .3s ease-in-out;
+
+        h1 {
+            // border: 2px orange solid;
+        }
+
+        nav {
+            background-color: $background-color;
+            position: fixed;
+            display: block;
+            visibility: hidden;
+            top: -155px;
+            right: 0;
+            height: 155px;
+            width: 100vw;
+            text-align: center;
+            z-index: 1;
+            transition: top .3s ease-in-out;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: baseline;
+                gap: 10px;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        color: grey;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        padding: $base-padding;
+        // border: 2px green solid;
+        min-height: 100%;
+
+
+        .about-me {
+            background-color: $light-background-color;
+            // min-height: 100vh;
+            // border: 2px red solid;
+
+            section {
+                display: flex;
+                flex-direction: column;
+
+                .link-images {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-left: 25%;
+                    margin-right: 25%;
+                    text-align: center;
+                    padding: 0;
+
+                    li {
+                        list-style: none;
+
+                        a {
+                            i {
+                                font-size: 2rem;
+                                color: blue;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .projects {
+            background-color: $e-color;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: .9fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+            // border: 2px blue solid;
+
+            section {
+
+                // border: 2px yellow solid;
+                h3 {
+                    text-align: center;
+                }
+            }
+        }
+
+        .get-in-touch {
+            form {
+                fieldset {
+                    display: grid;
+                    gap: 10px;
+
+                    input {
+                        margin-bottom: 10px;
+                        width: 50%;
+                        border-radius: 5px;
+                    }
+
+                    textarea {
+                        width: 90%;
+                        height: 100px;
+                        border-radius: 5px;
+                        resize: none;
+                        margin-bottom: 10px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // border: 2px grey solid;
+
+        address {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+    }
+}

@@ -18,6 +18,9 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
   <!-- Style -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -33,7 +36,7 @@
 </head>
 
 <body>
-  <button class="menu-button">
+  <button class="menu-button" aria-label="open-nav-menu"> 
     <span></span>
     <span></span>
     <span></span>
@@ -51,21 +54,18 @@
   </header>
 
   <main>
-    <article>
-      <h1>Hi, my name is</h1>
+    <article class="start">
+      <h2 class="text-primary">Hi, my name is</h2>
       <h2>Alexander Walldén</h2>
     </article>
 
-    <article id="about-me">
+    <article class="about-me" id="about-me">
       <section>
         <p><strong>Alexander Walldén</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, at.</p>
         <ul class="link-images">
-          <li><a href="https://github.com/alexwallden" target="blank"><img src="/img/github.png" alt="Github"
-                height="50" width="50"></a></li>
-          <li><a href="https://www.linkedin.com/in/alexander-walld%C3%A9n-44127a52/" target="blank"><img
-                src="/img/linkedin.png" alt="LinkedIn" height="40" width="40"></a></li>
-          <li><a href="https://twitter.com/alexwallden" target="blank"><img src="/img/twitter.png" alt="Twitter"
-                height="35" width="35"></a></li>
+          <li><a href="https://github.com/alexwallden" target="blank"><i class="bi bi-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/alexander-walld%C3%A9n-44127a52/" target="blank"><i class="bi bi-linkedin"></i></a></li>
+          <li><a href="https://twitter.com/alexwallden" target="blank"><i class="bi bi-twitter"></i></a></li>
         </ul>
       </section>
         <figure>
@@ -74,7 +74,7 @@
         </figure>
     </article>
 
-    <article id="projects">
+    <article class="projects" id="projects">
       <section>
         <h3>Project name</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatem accusantium totam fuga
@@ -87,8 +87,8 @@
       </section>
     </article>
 
-    <article id="get-in-touch">
-      <h1>Get in touch</h1>
+    <article class="get-in-touch" id="get-in-touch">
+      <h2>Get in touch</h2>
       <form>
         <fieldset>
           <label for="name">Name: </label>
@@ -97,13 +97,14 @@
           <input type="email" id="email" placeholder="Your email">
         </fieldset>
         <fieldset>
-          <legend>Your message: </legend>
-          <textarea name="message" id="message" placeholder="Your message" cols="30" rows="10"></textarea>
+          <label for="message">Your message: </label>
+          <textarea name="message" id="message" placeholder="Your message"></textarea>
         </fieldset>
         <button type="submit" value="Submit">Submit</button>
         <button type="reset">Reset</button>
       </form>
     </article>
+  </main>
 
     <footer>
       <address>
@@ -113,7 +114,6 @@
       <a href="#">Source code</a>
     </footer>
 
-  </main>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>

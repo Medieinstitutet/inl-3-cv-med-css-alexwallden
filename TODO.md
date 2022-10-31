@@ -6,7 +6,9 @@ Todos:
  + [x] Kolla igenom tillgänglighet för förra koden 
  + [x] Lägg in wireframe i iPad
  + [ ] Kolla hur man använder aria-taggar och om det är relevant för projektet
- + [ ] Lägg css-koden i en fil
+ + [x] Lägg css-koden i en fil
+ + [ ] Kolla upp och använd lazy loading
+ + [ ] Rätta till utifrån kommentarer
 
 
 Frågor:
@@ -22,3 +24,5 @@ Inspiration:
  + https://olaolu.dev/
  + https://anniebombanie.com/
  + https://catalins.tech/14-best-web-developer-portfolios-to-get-inspiration
+
+ + https://www.youtube.com/watch?v=5ewZ5ej1rmo
