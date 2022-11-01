@@ -9,6 +9,9 @@ Todos:
  + [x] Lägg css-koden i en fil
  + [ ] Kolla upp och använd lazy loading
  + [x] Rätta till utifrån kommentarer
+ + [ ] Sortera bland mapparna
+ + [ ] Centralisera temana för de olika sektionerna
+ + [ ] Kolla in SMACSS 
 
 
 Frågor:

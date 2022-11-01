@@ -95,9 +95,10 @@ body {
 
     main {
 
-        & > * {
+        &>* {
             padding: $base-padding;
         }
+
         min-height: 100%;
         background-color: $dbg-background-color;
 
@@ -114,7 +115,7 @@ body {
             .name-presentation {
                 position: relative;
                 right: 5%;
-                
+
                 h2 {
                     margin: 0;
 
@@ -136,6 +137,8 @@ body {
         .about-me {
             background-color: $dbg-background-color;
             color: $dbg-text-color;
+            min-height: 100vh;
+
             // min-height: 100vh;
             // border: 2px red solid;
             p {
@@ -170,6 +173,7 @@ body {
 
                 }
             }
+
             figure {
                 display: flex;
                 flex-direction: column;
@@ -190,6 +194,7 @@ body {
             grid-template-columns: .9fr;
             grid-template-rows: .1fr 1fr 1fr;
             gap: 20px;
+            min-height: 100vh;
             // border: 2px blue solid;
 
             h2 {
@@ -206,9 +211,30 @@ body {
         }
 
         .get-in-touch {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
             background-color: $dbg-background-color;
             color: $dbg-text-color;
+            min-height: calc(100vh - $footer-height);
+            h1 {
+                grid-row: 1 / 1;
+                grid-column: 1 / 3;
+            }
+
+            i {
+                // position: absolute;
+                // top: 60px;
+                // right: 50px;
+                font-size: 6rem;
+                grid-row: 2 / 2;
+                grid-column: 1 / 3;
+            }
+
             form {
+                display: grid;
+                height: 100%;
                 fieldset {
                     display: grid;
                     gap: 10px;
@@ -228,6 +254,7 @@ body {
                     }
 
                 }
+
                 button {
                     background-color: transparent;
                     border: 1px $dbg-text-color-highlight solid;
@@ -241,6 +268,7 @@ body {
     }
 
     footer {
+        height: $footer-height;
         display: flex;
         justify-content: space-between;
         align-items: center;
