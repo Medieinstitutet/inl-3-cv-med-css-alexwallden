@@ -20,6 +20,7 @@ Frågor:
  + Ok att använda id om man ska länka dit?
  + Var det ok att använda visibility: hidden?
  + Vad ska man använda för konvention när man namnger klasser?
+ + Grid på get in touch-sidan.
 
 Inspiration:
 
