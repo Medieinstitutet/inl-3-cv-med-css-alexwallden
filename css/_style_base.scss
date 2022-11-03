@@ -91,9 +91,7 @@ body {
             position: relative;
             margin: 0;
             font-weight: normal;
-            height: $logo-circle-radius-mobile;
-            width: $logo-circle-radius-mobile;
-            font-size: calc($logo-circle-radius-mobile / 2);
+            @include logo-size($logo-circle-radius-mobile);
             border: 2px $dbg-text-color-highlight solid;
             border-radius: 50%;
 
@@ -156,6 +154,7 @@ body {
         background-color: $dbg-background-color;
 
         .start {
+            @include first-section-height($header-height-mobile);
             min-height: calc(100vh - $header-height-mobile);
             width: 100%;
             padding: $base-padding;
@@ -271,15 +270,9 @@ body {
             grid-template-rows: .1fr 1fr 1fr;
             gap: 20px;
             min-height: 100vh;
-            // border: 2px blue solid;
-
-            h2 {
-                // color: $lbg-headline-color;
-            }
 
             section {
 
-                // border: 2px yellow solid;
                 h3 {
                     text-align: center;
                 }
@@ -291,7 +284,8 @@ body {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             color: $dbg-text-color;
-            min-height: calc(100vh - $footer-height-mobile);
+            @include last-section-height($footer-height-mobile);
+            // height: 100vh;
 
             h2 {
                 grid-row: 1 / 1;

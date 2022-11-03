@@ -1,10 +1,26 @@
+/* Mixins */
+@mixin first-section-height($header-height) {
+    min-height: calc(100vh - $header-height);
+}
+
+@mixin last-section-height($footer-height) {
+    min-height: calc(100vh - $footer-height);
+}
+
+@mixin logo-size($logo-radius){
+    height: $logo-radius;
+    width: $logo-radius;
+    font-size: calc($logo-radius / 2);
+}
+
+/* Variables */
 $base-padding: 10px;
 
 // Measures
 $header-height-mobile: 150px;
 $header-height-tablet: 200px;
 $footer-height-mobile: 50px;
-$footer-hight-tablet: 70px;
+$footer-height-tablet: 70px;
 
 // Logo 
 $logo-circle-radius-mobile: 7rem;
