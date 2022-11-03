@@ -1,3 +1,16 @@
+@import 'variables';
+
+body {
+    .header {
+
+        .logo {
+            height: $logo-circle-radius-tablet;
+            width: $logo-circle-radius-tablet;
+            font-size: calc($logo-circle-radius-tablet / 2);
+        }
+    }
+}
+
 main {
     background-color: green;
 }

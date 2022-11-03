@@ -11,15 +11,11 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-@import 'style_base';
-// @import 'header/header.scss';
-// @import 'main/_main_base';
-// @import 'about-me/about-me.scss';
-// @import 'projects/projects.scss';
+   @import 'style_base';
 
-@media screen and (min-width: 481px) {
-  @import '_style_tablet';
-}
+   @media screen and (min-width: 481px) {
+     @import '_style_tablet';
+   }
 
 * {
   box-sizing: border-box;
@@ -29,7 +25,9 @@
 
 body, html {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 html {
@@ -284,4 +282,5 @@ textarea {
     page-break-after: avoid;
   }
 }
+
 

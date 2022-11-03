@@ -42,10 +42,10 @@
     <span></span>
   </button>
   <header class="header">
-    <div class="logo">
-      <p>A</p>
-      <p>W</p>
-    </div>
+    <h1 class="logo">
+      <p aria-hidden="true">A<span>lexander</span></p> <!-- visibility: hidden -->
+      <p aria-hidden="true">W<span>alldén</span></p>
+    </h1>
     <nav class="nav-menu">
       <ul>
         <li><a href="#about-me">About me</a></li>
@@ -65,19 +65,26 @@
     </article>
 
     <article class="about-me content-section" id="about-me">
-      <h2>About me</h2>
-      <p><strong>Alexander Walldén</strong> is a former music teacher who's studying front end development at <a href="https://medieinstitutet.se/">Medieinstitutet</a>.</p>
+      <section class="text-content">
+        <h2>About me</h2>
+        <p><strong>Alexander Walldén</strong> is a former music teacher who's studying front end development at <a
+            href="https://medieinstitutet.se/">Medieinstitutet</a>.</p>
+      </section>
+      <i class="bi bi-music-note-beamed decoration"></i>
       <figure>
         <img src="img/Alexander-Wallden.jpeg" alt="Alexander Walldén" height="200" loading='lazy'>
         <figcaption>Alexander Walldén</figcaption>
       </figure>
+      <i class="bi bi-laptop decoration"></i>
       <section>
         <h3>Connect with me</h3>
         <ul class="link-images">
-          <li><a href="https://github.com/alexwallden" target="blank" aria-label="Github-link"><i class="bi bi-github"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/alexander-walld%C3%A9n-44127a52/" target="blank" aria-label="Github-link"><i
-                class="bi bi-linkedin"></i></a></li>
-          <li><a href="https://twitter.com/alexwallden" target="blank" aria-label="Github-link"><i class="bi bi-twitter"></i></a></li>
+          <li><a href="https://github.com/alexwallden" target="_blank" aria-label="Github link"><i
+                class="bi bi-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/alexander-walld%C3%A9n-44127a52/" target="_blank"
+              aria-label="linked in link"><i class="bi bi-linkedin"></i></a></li>
+          <li><a href="https://twitter.com/alexwallden" target="_blank" aria-label="twitter link"><i
+                class="bi bi-twitter"></i></a></li>
         </ul>
       </section>
     </article>
@@ -86,12 +93,12 @@
       <h2>Projects</h2>
       <section>
         <h3>To the moon</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatem accusantium totam fuga
+        <p>Lorem, ipsum dolor sit amet consectetur adi elit. Necessitatibus voluptatem accusantium totam fuga
           nisi atque minus magni, accusamus rerum veritatis!</p>
       </section>
       <section>
         <h3>Home dashboard</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatem accusantium totam fuga
+        <p>Lorem, ipsum dolor sit amet consectetur adi elit. Necessitatibus voluptatem accusantium totam fuga
           nisi atque minus magni, accusamus rerum veritatis!</p>
       </section>
     </article>
@@ -120,7 +127,7 @@
       <a href="mailto:alexander.wallden@me.com">alexander.wallden@me.com</a>
       <p>0736-32 17 62</p>
     </address> -->
-    <a href="#">Credits</a>
+    <a href="credits.html">Credits</a>
   </footer>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>

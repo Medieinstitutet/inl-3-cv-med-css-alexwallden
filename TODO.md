@@ -12,6 +12,8 @@ Todos:
  + [ ] Sortera bland mapparna
  + [ ] Centralisera temana för de olika sektionerna
  + [ ] Kolla in SMACSS 
+ + [ ] BEM
+Tailwinds klasser
 
 
 Frågor:
