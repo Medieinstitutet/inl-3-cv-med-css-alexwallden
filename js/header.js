@@ -15,6 +15,7 @@ const changeColorFunc = (color) => {
 }
 
 const showOrHide = () => {
+    if (window.innerWidth < 760) {
     showMenu = !showMenu;
     navMenu.style.visibility = showMenu ? 'visible' : 'hidden';
     navMenu.style.top = showMenu ? '0' : '-155px';
@@ -23,11 +24,18 @@ const showOrHide = () => {
     window.pageYOffset < 26 && (header.style.marginTop = showMenu ? '155px' : '0');
 
     !showMenu && (header.style.marginTop = '0');
+    }
 }
 
 menuButton.addEventListener('click', showOrHide);
-
 navMenu.addEventListener('click', showOrHide);
+
+window.addEventListener('scroll', () => {
+    if (window.innerWidth >= 760 && showMenu) {
+        header.style.marginTop = '0px';
+        showMenu = false;
+    }
+})
 
 // window.addEventListener('scroll', () => {
 //     let offset = window.pageYOffset;

@@ -1,16 +1,59 @@
 @import 'variables';
 
 body {
+
+    .menu-button {
+        display: none;
+    }
+
     .header {
+        height: $header-height-tablet;
 
         .logo {
             height: $logo-circle-radius-tablet;
             width: $logo-circle-radius-tablet;
             font-size: calc($logo-circle-radius-tablet / 2);
+            border: 4px $dbg-text-color-highlight solid;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            visibility: visible;
+
+            ul {
+                flex-direction: row;
+            }
         }
     }
-}
 
-main {
-    background-color: green;
+    main {
+        .about-me {
+            min-height: 100vh;
+            width: 100%;
+            display: grid;
+            grid-template-rows: repeat(2, fit-content);
+            grid-template-columns: repeat(2, fit-content);
+            gap: min(20%, 30px);
+            padding-left: 20px;
+            padding-right: 20px;
+            justify-content: center;
+
+
+            figure {
+                align-self: flex-end;
+                img {
+                    // border-radius: 0;
+                    height: 400px;
+                    width: 400px;
+                }
+            }
+
+            section:last-of-type {
+                grid-column: 1 / span 2;
+                justify-content: flex-start;
+                align-self: flex-end;
+            }
+        }
+    }
 }
