@@ -1,6 +1,6 @@
 /* Mixins */
-@mixin first-section-height($header-height) {
-    min-height: calc(100vh - $header-height);
+@mixin first-section-height($header-height, $navbar-height) {
+    min-height: calc(100vh - $header-height - $navbar-height);
 }
 
 @mixin last-section-height($footer-height) {

@@ -31,9 +31,18 @@ menuButton.addEventListener('click', showOrHide);
 navMenu.addEventListener('click', showOrHide);
 
 window.addEventListener('scroll', () => {
+    console.log('Scroll')
     if (window.innerWidth >= 760 && showMenu) {
         header.style.marginTop = '0px';
         showMenu = false;
+    }
+    if (pageYOffset > 200 && window.innerWidth >= 760) {
+        navMenu.classList.add('fake-sticky')
+        header.style.marginTop = '64px';
+    }
+    else if (pageYOffset <= 200 && window.innerWidth >= 760) {
+        navMenu.classList.remove('fake-sticky');
+        header.style.marginTop = '0'
     }
 })
 

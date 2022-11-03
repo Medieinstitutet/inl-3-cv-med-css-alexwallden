@@ -46,7 +46,7 @@ body>* {
 }
 
 body {
-    
+    height: 100%;
 
     // Menyknapp
     .menu-button {
@@ -113,32 +113,32 @@ body {
             }
         }
 
-        nav {
-            background-color: $dbg-background-color;
-            position: fixed;
-            display: block;
-            visibility: hidden;
-            top: -155px;
-            right: 0;
-            height: 155px;
-            width: 100vw;
-            text-align: center;
-            z-index: 4;
-            transition: top .3s ease-in-out;
+    }
+    nav {
+        background-color: $dbg-background-color;
+        position: fixed;
+        display: block;
+        visibility: hidden;
+        top: -155px;
+        right: 0;
+        height: 155px;
+        width: 100vw;
+        text-align: center;
+        z-index: 4;
+        transition: top .3s ease-in-out;
 
-            ul {
-                display: flex;
-                flex-direction: column;
-                align-items: baseline;
-                gap: 10px;
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            gap: 10px;
 
-                li {
-                    list-style: none;
+            li {
+                list-style: none;
 
-                    a {
-                        text-decoration: none;
-                        color: grey;
-                    }
+                a {
+                    text-decoration: none;
+                    color: grey;
                 }
             }
         }
@@ -154,7 +154,7 @@ body {
         background-color: $dbg-background-color;
 
         .start {
-            @include first-section-height($header-height-mobile);
+            @include first-section-height($header-height-mobile, 0);
             min-height: calc(100vh - $header-height-mobile);
             width: 100%;
             padding: $base-padding;

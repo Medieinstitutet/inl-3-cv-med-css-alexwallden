@@ -1,5 +1,10 @@
 @import 'variables';
 
+.fake-sticky {
+    position: fixed;
+    top: 0;
+}
+
 body {
 
     .menu-button {
@@ -14,21 +19,32 @@ body {
             border: 4px $dbg-text-color-highlight solid;
         }
 
-        nav {
-            position: sticky;
-            top: 0;
-            visibility: visible;
+    }
 
-            ul {
-                flex-direction: row;
-            }
+    nav {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        visibility: visible;
+        height: 64px;
+        padding: $base-padding;
+
+        ul {
+            flex-direction: row;
+            margin: 5px;
+            padding: 0;
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.5rem;
         }
     }
 
     main {
         .start {
-            @include first-section-height($header-height-tablet)
+            @include first-section-height($header-height-tablet, 64px)
         }
+
         .about-me {
             min-height: 100vh;
             width: 100%;
@@ -41,7 +57,7 @@ body {
             justify-content: center;
 
             .decoration {
-                &:first-of-type{
+                &:first-of-type {
                     top: 180px;
                     transform: rotate(40deg);
                 }
@@ -50,6 +66,7 @@ body {
 
             figure {
                 align-self: flex-end;
+
                 img {
                     // border-radius: 0;
                     height: 300px;
@@ -74,6 +91,7 @@ body {
                 grid-row: 1;
                 grid-column: 1 / span 2;
             }
+
             section {
                 grid-row: 2;
                 grid-column: 1;
@@ -93,6 +111,7 @@ body {
             }
         }
     }
+
     footer {
         height: $footer-height-tablet;
     }

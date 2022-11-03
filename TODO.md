@@ -7,12 +7,14 @@ Todos:
  + [x] Lägg in wireframe i iPad
  + [x] Kolla hur man använder aria-taggar och om det är relevant för projektet
  + [x] Lägg css-koden i en fil
- + [ ] Kolla upp och använd lazy loading
+ + [x] Kolla upp och använd lazy loading
  + [x] Rätta till utifrån kommentarer
- + [ ] Sortera bland mapparna
- + [ ] Centralisera temana för de olika sektionerna
+ + [x] Sortera bland mapparna
+ + [x] Centralisera temana för de olika sektionerna
  + [ ] Kolla in SMACSS 
  + [ ] BEM
+ + [ ] Fixa så navbaren blir sticky eller strunta i det.
+ + [ ] Förminska bilden.
 Tailwinds klasser
 
 
