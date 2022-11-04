@@ -13,12 +13,15 @@ Todos:
  + [x] Centralisera temana för de olika sektionerna
  + [ ] Kolla in SMACSS 
  + [ ] BEM
- + [ ] Fixa så navbaren blir sticky eller strunta i det.
- + [ ] Förminska bilden.
+ + [x] Fixa så navbaren blir sticky eller strunta i det.
+ + [x] Förminska bilden.
 Tailwinds klasser
 
 
 Frågor:
+
+ + Ok med h1-lösningen i ikonen?
+ + Annan lösning på sticky?
 
  + Vilka semantiska taggar kommer att vara relevanta i projektet?
  + Ok att använda id om man ska länka dit?

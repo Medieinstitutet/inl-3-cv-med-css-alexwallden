@@ -322,12 +322,14 @@ body {
                     input {
                         margin-bottom: 20px;
                         width: 70%;
+                        max-width: 310px;
                         height: 35px;
                         border-radius: 5px;
                     }
 
                     textarea {
                         width: 90%;
+                        max-width: 400px;
                         height: 100px;
                         border-radius: 5px;
                         resize: none;
