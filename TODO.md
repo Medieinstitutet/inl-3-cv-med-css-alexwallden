@@ -11,8 +11,7 @@ Todos:
  + [x] Rätta till utifrån kommentarer
  + [x] Sortera bland mapparna
  + [x] Centralisera temana för de olika sektionerna
- + [ ] Kolla in SMACSS 
- + [ ] BEM
+ + [ ] 
  + [x] Fixa så navbaren blir sticky eller strunta i det.
  + [x] Förminska bilden.
 Tailwinds klasser
@@ -20,14 +19,15 @@ Tailwinds klasser
 
 Frågor:
 
- + Ok med h1-lösningen i ikonen?
+ + Ok med h1-lösningen i ikonen och h2-lösningen i about me?
  + Annan lösning på sticky?
+ + Vad är adressen till min bild?
+ + Varför funkar inte styling på Credits-sidan?
 
- + Vilka semantiska taggar kommer att vara relevanta i projektet?
- + Ok att använda id om man ska länka dit?
- + Var det ok att använda visibility: hidden?
+ + Vilka semantiska taggar kommer att vara relevanta i projektet? 
+ 
  + Vad ska man använda för konvention när man namnger klasser?
- + Grid på get in touch-sidan.
+ > Kolla in SMACSS, BEM
 
 Inspiration:
 

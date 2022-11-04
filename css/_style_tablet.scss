@@ -11,7 +11,7 @@
 }
 
 body {
-    
+
 
     .menu-button {
         display: none;
@@ -38,12 +38,24 @@ body {
         ul {
             flex-direction: row;
             margin: 5px;
+            margin-left: 10px;
             padding: 0;
             min-width: 443px;
             width: 50%;
             display: flex;
             justify-content: space-between;
             font-size: 1.5rem;
+
+            li {
+                background-image: linear-gradient($dbg-text-color-highlight, $dbg-text-color-highlight);
+                background-size: 0 5px;
+                background-repeat: no-repeat;
+                background-position: bottom left;
+
+                &:hover {
+                    background-size: 100% 3px
+                }
+            }
         }
     }
 
