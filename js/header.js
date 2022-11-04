@@ -19,7 +19,8 @@ const showOrHide = () => {
     showMenu = !showMenu;
     navMenu.style.visibility = showMenu ? 'visible' : 'hidden';
     navMenu.style.top = showMenu ? '0' : '-155px';
-    showMenu ? header.style.transition = 'margin-top .3s ease-in-out' : header.style.transition = 'none';
+    header.style.transition = showMenu ?'margin-top .3s ease-in-out' : 'none';
+    // showMenu ? header.style.transition = 'margin-top .3s ease-in-out' : header.style.transition = 'none';
 
     window.pageYOffset < 26 && (header.style.marginTop = showMenu ? '155px' : '0');
 
@@ -46,36 +47,14 @@ window.addEventListener('scroll', () => {
     }
 })
 
-// window.addEventListener('scroll', () => {
-//     let offset = window.pageYOffset;
-//     console.log(window.pageYOffset);
-//     console.log(height)
+window.addEventListener('resize', () => {
+    // Om fönstret är bredare än 760 så lägg till visible osv
+    if (window.innerWidth >= 760 ) {
+        navMenu.style.transition = 'none'
+        navMenu.style.visibility = 'visible'
+        header.style.marginTop = '0'
+        console.log('fdsafdsa')
 
-//     if (offset < 150) {
-//         changeColorFunc('rgb(89, 255, 209)')
-//         console.log('Första')
-//     }
-//     else if (offset > 150 && offset < height) {
-//         changeColorFunc('rgb(55, 18, 202)')
-//         console.log('andra')
-//     }
-
-//     else if (offset > height && offset < height * 2) {
-//         changeColorFunc('rgb(89, 255, 209)')
-//     }
-//     else if (offset > height * 2 && offset < height *3) {
-//         changeColorFunc('rgb(55, 18, 202)')
-//         console.log('tredje')
-//     }
-//     else if (offset > height * 3) {
-//         changeColorFunc('rgb(89, 255, 209)')
-//     }
-
-
-//     // if (offset > height) {
-//     //     buttonSpans.forEach(span => {
-//     //         span.style.backgroundColor = 'white'
-//     //         console.log(span)
-//     // })
-//     // }
-// })
+    }
+    // Är det mindre kolla mot showmenu-boolen
+})

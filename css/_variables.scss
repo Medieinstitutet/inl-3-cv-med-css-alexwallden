@@ -3,8 +3,8 @@
     min-height: calc(100vh - $header-height - $navbar-height);
 }
 
-@mixin last-section-height($footer-height) {
-    min-height: calc(100vh - $footer-height);
+@mixin last-section-height($footer-height, $sticky-navbar-height) {
+    min-height: calc(100vh - $footer-height - $sticky-navbar-height);
 }
 
 @mixin logo-size($logo-radius){

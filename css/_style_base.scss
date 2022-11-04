@@ -187,7 +187,6 @@ body {
 
         .about-me {
             position: relative;
-            min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -269,7 +268,6 @@ body {
             grid-template-columns: .9fr;
             grid-template-rows: .1fr 1fr 1fr;
             gap: 20px;
-            min-height: 100vh;
 
             section {
 
@@ -284,7 +282,7 @@ body {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             color: $dbg-text-color;
-            @include last-section-height($footer-height-mobile);
+            @include last-section-height($footer-height-mobile, 0);
             // height: 100vh;
 
             h2 {
