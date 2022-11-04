@@ -95,7 +95,8 @@ body {
             border: 2px $dbg-text-color-highlight solid;
             border-radius: 50%;
 
-            p {
+            .initials {
+
                 position: relative;
                 left: .45em;
                 display: block;
@@ -103,11 +104,13 @@ body {
                 margin: 0;
 
                 &:last-child {
+
                     bottom: .8em;
                     left: .75em;
                 }
+ 
+                .hidden-letters {
 
-                span {
                     visibility: hidden;
                 }
             }
@@ -191,9 +194,17 @@ body {
             flex-direction: column;
             justify-content: space-between;
 
+            h2:first-child {
+                display: none;
+            }
+
             .text-content {
                 position: relative;
                 z-index: 1;
+
+                h2 {
+                    display: block;
+                }
             }
 
             .decoration {

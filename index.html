@@ -43,8 +43,8 @@
   </button>
   <header class="header">
     <h1 class="logo">
-      <p aria-hidden="true">A<span>lexander</span></p>
-      <p aria-hidden="true">W<span>alldén</span></p>
+      <span class="initials" aria-hidden="true">A<span class="hidden-letters">lexander</span></span>
+      <span class="initials" aria-hidden="true">W<span class="hidden-letters">alldén</span></span>
     </h1>
   </header>
   <nav class="nav-menu">
@@ -65,6 +65,7 @@
     </article>
 
     <article class="about-me content-section" id="about-me">
+      <h2 aria-hidden="true">About me</h2>
       <section class="text-content">
         <h2>About me</h2>
         <p><strong>Alexander Walldén</strong> is a former music teacher who's studying front end development at <a
@@ -75,7 +76,11 @@
       </section>
       <i class="bi bi-music-note-beamed decoration"></i>
       <figure>
-        <img src="img/Alexander-Wallden.jpeg" alt="Alexander Walldén" height="200" width="200" loading='lazy'>
+        <picture>
+          <source media="(max-width:759px)" srcset="img/Alexander-Wallden-200.jpeg">
+          <source media="(min-width:760px)" srcset="img/Alexander-Wallden-300.jpeg">
+          <img src="img/Alexander-Wallden-200.jpeg" alt="Alexander Walldén" loading='lazy'>
+        </picture>
         <figcaption>Alexander Walldén</figcaption>
       </figure>
       <i class="bi bi-laptop decoration"></i>
