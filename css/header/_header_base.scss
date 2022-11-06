@@ -1,0 +1,45 @@
+header {
+    position: relative;
+    width: 100%;
+    // border: 2px blue solid;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    // transition: margin-top .3s ease-in-out;
+
+    h1 {
+    }
+
+    
+
+    nav {
+        position: fixed;
+        display: block;
+        visibility: hidden;
+        top: -155px;
+        right: 0;
+        height: 155px;
+        width: 100vw;
+        background-color: green;
+        text-align: center;
+        z-index: 1;
+        transition: top .3s ease-in-out;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            gap: 10px;
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: grey;
+                }
+            }
+        }
+    }
+}

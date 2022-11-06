@@ -1,0 +1,7 @@
+@import '../variables';
+
+main {
+    padding: $base-padding;
+    border: 2px green solid;
+    min-height: 100%;
+}

@@ -1,0 +1,14 @@
+#projects {
+    display: grid;
+    min-height: 900px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20%;
+
+    section {
+        h3 {
+            text-align: center;
+        }
+    }
+}
+

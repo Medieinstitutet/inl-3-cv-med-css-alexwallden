@@ -1,0 +1,129 @@
+@import 'variables';
+
+.content-section {
+    min-height: calc(100vh - 64px);
+    scroll-margin-top: 63px;
+}
+
+.fake-sticky {
+    position: fixed;
+    top: 0;
+}
+
+body {
+
+
+    .menu-button {
+        display: none;
+    }
+
+    .header {
+        height: $header-height-tablet;
+
+        .logo {
+            @include logo-size($logo-circle-radius-tablet);
+            border: 4px $dbg-text-color-highlight solid;
+        }
+
+    }
+
+    nav {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        visibility: visible;
+        height: 64px;
+        padding: $base-padding;
+
+        ul {
+            flex-direction: row;
+            margin: 5px;
+            margin-left: 10px;
+            padding: 0;
+            min-width: 443px;
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.5rem;
+
+            li {
+                background-image: linear-gradient($dbg-text-color-highlight, $dbg-text-color-highlight);
+                background-size: 0 5px;
+                background-repeat: no-repeat;
+                background-position: bottom left;
+
+                &:hover {
+                    background-size: 100% 3px
+                }
+            }
+        }
+    }
+
+    main {
+        .start {
+            @include first-section-height($header-height-tablet, 64px)
+        }
+
+        .about-me {
+            width: 100%;
+            display: grid;
+            gap: min(20%, 30px);
+            padding-left: 20px;
+            padding-right: 20px;
+            justify-content: center;
+
+            .decoration {
+                &:first-of-type {
+                    top: 180px;
+                    transform: rotate(40deg);
+                }
+            }
+
+
+            figure {
+                align-self: flex-end;
+            }
+
+            section:last-of-type {
+                grid-column: 1 / span 2;
+                justify-content: flex-start;
+                align-self: flex-end;
+                padding-bottom: 15px;
+            }
+        }
+
+        .projects {
+            display: grid;
+            grid-template-rows: min-content min-content;
+            grid-template-columns: 45% 45%;
+            gap: 20px;
+
+            h2 {
+                grid-row: 1;
+                grid-column: 1 / span 2;
+            }
+
+            section {
+                grid-row: 2;
+                grid-column: 1;
+
+                &:last-child {
+                    grid-row: 2;
+                    grid-column: 2;
+                }
+            }
+        }
+
+        .get-in-touch {
+            @include last-section-height($footer-height-tablet, 63px);
+
+            i {
+                font-size: 15rem;
+            }
+        }
+    }
+
+    footer {
+        height: $footer-height-tablet;
+    }
+}

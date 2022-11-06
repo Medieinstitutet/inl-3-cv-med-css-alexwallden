@@ -1,0 +1,49 @@
+/* Mixins */
+@mixin first-section-height($header-height, $navbar-height) {
+    min-height: calc(100vh - $header-height - $navbar-height);
+}
+
+@mixin last-section-height($footer-height, $sticky-navbar-height) {
+    min-height: calc(100vh - $footer-height - $sticky-navbar-height);
+}
+
+@mixin logo-size($logo-radius){
+    height: $logo-radius;
+    width: $logo-radius;
+    font-size: calc($logo-radius / 2);
+}
+
+/* Variables */
+$base-padding: 10px;
+
+// Measures
+
+$header-height-mobile: 150px;
+$header-height-tablet: 200px;
+
+$footer-height-mobile: 50px;
+$footer-height-tablet: 70px;
+
+// Logo 
+$logo-circle-radius-mobile: 7rem;
+$logo-circle-radius-tablet: 10rem;
+
+
+// Colors
+
+$a-color: #AB9850;
+$b-color: #F7D968;
+$c-color: #A45CF7;
+$d-color: #58AB2E;
+$e-color: #87F74F;
+
+// Dark background
+$dbg-background-color: rgb(10, 19, 35);
+$dbg-text-color-highlight: rgb(89, 255, 209);
+$dbg-headline-color: rgb(193, 203, 244);
+$dbg-text-color: rgb(117, 127, 160);
+
+// Light background
+$lbg-background-color: rgb(247, 247, 247);
+$lbg-headline-color: rgb(55, 18, 202);
+$lbg-text-color: rgb(46, 10, 76);

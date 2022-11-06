@@ -1,0 +1,12 @@
+#about-me {
+    border: 2px red solid;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        .link-images {
+            display: flex;
+
+        }
+    }
+}
