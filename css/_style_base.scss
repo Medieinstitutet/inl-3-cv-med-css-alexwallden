@@ -79,7 +79,6 @@ body {
         position: relative;
         height: $header-height-mobile;
         width: 100%;
-        // border: 2px blue solid;
         padding: 20px;
         display: flex;
         justify-content: space-between;
@@ -272,7 +271,6 @@ body {
         }
 
         .projects {
-            // color: $lbg-text-color;
             display: grid;
             justify-content: center;
             grid-template-columns: .9fr;
@@ -293,7 +291,6 @@ body {
             grid-template-columns: repeat(3, 1fr);
             color: $dbg-text-color;
             @include last-section-height($footer-height-mobile, 0);
-            // height: 100vh;
 
             h2 {
                 grid-row: 1 / 1;
