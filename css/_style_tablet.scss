@@ -84,17 +84,13 @@ body {
 
             figure {
                 align-self: flex-end;
-
-                // img {
-                //     height: 300px;
-                //     width: 300px;
-                // }
             }
 
             section:last-of-type {
                 grid-column: 1 / span 2;
                 justify-content: flex-start;
                 align-self: flex-end;
+                padding-bottom: 15px;
             }
         }
 

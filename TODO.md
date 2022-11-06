@@ -21,8 +21,8 @@ Frågor:
 
  + Ok med h1-lösningen i ikonen och h2-lösningen i about me?
  + Annan lösning på sticky?
- + Vad är adressen till min bild?
  + Varför funkar inte styling på Credits-sidan?
++ Hur perfekt behöver det vara?
 
  + Vilka semantiska taggar kommer att vara relevanta i projektet? 
  

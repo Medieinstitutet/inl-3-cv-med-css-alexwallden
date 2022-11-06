@@ -32,7 +32,6 @@ menuButton.addEventListener('click', showOrHide);
 navMenu.addEventListener('click', showOrHide);
 
 window.addEventListener('scroll', () => {
-    console.log('Scroll')
     if (window.innerWidth >= 760 && showMenu) {
         header.style.marginTop = '0px';
         showMenu = false;
@@ -53,7 +52,6 @@ window.addEventListener('resize', () => {
         navMenu.style.transition = 'none'
         navMenu.style.visibility = 'visible'
         header.style.marginTop = '0'
-        console.log('fdsafdsa')
 
     }
     // Är det mindre kolla mot showmenu-boolen
